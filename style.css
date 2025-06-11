@@ -3,45 +3,69 @@ body {
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
+    background: #f9f9f9;
     color: #222;
 }
 header {
-    background: #fff;
+    background: linear-gradient(to right, #e00, #900);
+    color: white;
     text-align: center;
-    padding: 2em 1em;
-    border-bottom: 3px solid #e00;
+    padding: 2.5em 1em;
 }
 header h1 {
     font-size: 2.5em;
-    margin-bottom: 0.2em;
+    margin: 0;
 }
-header nav a {
-    margin: 0 10px;
-    color: #e00;
-    text-decoration: none;
+header .tagline {
+    margin-top: 0.5em;
+    font-weight: 300;
+}
+nav {
+    margin-top: 1.5em;
+}
+nav a {
+    margin: 0.3em 0.5em;
+    color: white;
     font-weight: bold;
+    text-decoration: none;
+}
+.button {
+    background: white;
+    color: #e00;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.button:hover {
+    background: #f4f4f4;
 }
 .hero {
+    background: #fff;
+    padding: 3em 1em;
+}
+.hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #fff;
-    padding: 2em;
+    gap: 2em;
 }
-.hero img {
-    max-width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+.hero-content img {
+    max-width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
 }
-.hero-text {
-    margin-top: 1.5em;
+.hero-content div {
+    max-width: 600px;
     text-align: center;
 }
-.about, .gallery {
+.gallery {
+    background: #f3f3f3;
     padding: 2em;
-    background: #fff;
-    margin-top: 1em;
+}
+.gallery h2 {
+    text-align: center;
+    margin-bottom: 1em;
 }
 .gallery .grid {
     display: grid;
@@ -51,11 +75,18 @@ header nav a {
 .gallery img {
     width: 100%;
     border-radius: 10px;
-    object-fit: cover;
 }
 footer {
-    text-align: center;
-    padding: 1.5em;
     background: #eee;
-    margin-top: 2em;
+    padding: 1.5em;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .hero-content {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .hero-content div {
+        text-align: left;
+    }
 }
