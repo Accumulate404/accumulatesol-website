@@ -2,98 +2,69 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  color: #fff;
-  background: #111;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
-.hero-bg {
+.hero {
   background-size: cover;
   background-position: center;
-  padding: 4em 1em;
-  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-header h1 {
-  font-size: 3em;
-  margin-bottom: 0.3em;
-  background: rgba(0,0,0,0.5);
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3em;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
 }
 .subtitle {
   font-size: 1.2em;
   margin-bottom: 1.5em;
 }
-nav a {
-  margin: 0 1em;
-  color: #fff;
+.cta-button {
+  background: linear-gradient(to right, #00eaff, #a377ff);
+  color: white;
+  padding: 0.6em 1.4em;
+  border: none;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
 }
-.buy-btn {
-  background: #fff;
-  color: #d30000;
-  padding: 0.5em 1em;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
+.scroll-reveal {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 6em 2em;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
 }
-.slogan {
-  margin-top: 3em;
+.scroll-reveal .content-box {
   background: rgba(0,0,0,0.6);
-  padding: 1em;
+  padding: 2em;
+  border-radius: 16px;
+  max-width: 600px;
 }
-.slogan h2, .slogan h3, .slogan h4 {
-  margin: 0.3em 0;
-  color: #ffdddd;
+.scroll-reveal.alt .content-box {
+  background: rgba(255,255,255,0.2);
 }
-.tokenomics {
-  background: #222;
-  padding: 3em 1em;
-  text-align: center;
-}
-.tokenomics h2 {
-  color: #f33;
-}
-.tokenomics ul {
+.scroll-reveal ul {
   list-style: none;
   padding: 0;
-  margin-top: 1em;
 }
-.tokenomics li {
-  margin: 0.6em 0;
+.scroll-reveal li {
+  margin: 0.5em 0;
   font-size: 1.1em;
 }
-.gallery {
-  background: #111;
-  padding: 2em;
-}
-.gallery h2 {
+.center {
   text-align: center;
-  color: #f33;
-  margin-bottom: 1em;
-}
-.gallery .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 10px;
-}
-.gallery img {
-  width: 100%;
-  border-radius: 10px;
-}
-.cta-section {
-  text-align: center;
-  background: #111;
-  padding: 2em;
-}
-.call {
-  font-size: 1.4em;
-}
-.highlight {
-  color: #ff5050;
-  font-weight: bold;
 }
 footer {
   text-align: center;
-  background: #000;
-  padding: 1.5em;
-  color: #aaa;
-  font-size: 0.9em;
+  background: #111;
+  padding: 2em;
+  color: #ccc;
 }
