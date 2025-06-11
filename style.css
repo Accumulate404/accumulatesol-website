@@ -91,3 +91,13 @@ body {
   background: rgba(255, 255, 255, 0.9);
   color: #111;
 }
+
+.content-box.light {
+  background: rgba(255, 255, 255, 0.95);
+  color: #000;
+  text-shadow: 0 0 4px white;
+}
+.topnav a {
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+}
